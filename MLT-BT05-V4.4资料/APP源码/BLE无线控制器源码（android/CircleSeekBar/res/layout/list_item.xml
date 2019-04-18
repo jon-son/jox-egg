@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" 
+    android:background="#ffffff"
+    >
+    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_marginLeft="10dp"
+	            android:background="@drawable/key_img4" />
+
+	        <RadioButton
+	            android:id="@+id/radioBtn"
+	            android:layout_width="1dp"
+	            android:layout_height="wrap_content"
+	            android:enabled="false"
+	            android:focusable="false"
+	            android:visibility="invisible" />
+
+	        <TextView
+	            android:id="@+id/id"
+	            android:layout_width="80dip"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/radioBtn"
+	            android:layout_toRightOf="@+id/imageView1" />
+
+	        <TextView
+	            android:id="@+id/name"
+	            android:layout_width="20dip"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@+id/id" />
+
+	        <ImageView
+	            android:id="@+id/img_view4_id"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="19dp"
+	            android:background="@drawable/key_img" />
+
+	    </RelativeLayout>
+
+</LinearLayout>

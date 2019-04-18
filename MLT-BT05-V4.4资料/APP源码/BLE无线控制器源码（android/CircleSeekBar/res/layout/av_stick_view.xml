@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    >
+
+    <ImageButton
+        android:id="@+id/av_stick_button2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/av_stick_button1"
+        android:layout_below="@+id/av_stick_button1"
+        android:layout_marginTop="5dp"
+       
+        
+        android:background="@color/transparent_100"
+        android:src="@drawable/gray_round"
+        />
+
+    <ImageButton 
+        android:id="@+id/av_stick_button3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/av_stick_button2"
+        android:layout_below="@+id/av_stick_button2"
+        android:layout_marginTop="5dp"
+        
+        android:background="@color/transparent_100"
+        android:src="@drawable/gray_round"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/av_stick_button3"
+        android:layout_marginTop="42dp"
+        android:text="脉冲模式"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/av_stick_button2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="37dp"
+        android:text="舒适按摩"
+        android:textSize="12dp" />
+
+    <ImageButton
+        android:id="@+id/av_stick_button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@color/transparent_100"
+        android:src="@drawable/gray_round" />
+
+    <ImageButton
+        android:id="@+id/av_stick_button41"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_100"
+        android:src="@drawable/power_off1" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/av_stick_button41"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="温馨模式"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/av_stick_button41"
+        android:layout_below="@+id/av_stick_button41"
+        android:text="电源开关"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/connection_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/av_stick_button1"
+        android:text="TextView" 
+        android:layout_marginLeft="10dp"
+        />
+   
+</RelativeLayout>
+
+ <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        
+   
+    
+    
+    <TextView
+        android:id="@+id/av_stick_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/av_stick_button3"
+        android:text="强度：" 
+        android:layout_marginLeft="30dp"
+        />
+
+    <SeekBar
+        android:id="@+id/av_stick_seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="30dp" />
+
+     </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

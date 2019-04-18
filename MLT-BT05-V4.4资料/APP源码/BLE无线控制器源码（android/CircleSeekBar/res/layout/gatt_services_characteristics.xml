@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2013 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_device_address"
+                  android:textSize="14sp"/>
+        
+        <TextView android:id="@+id/device_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_state"
+                  android:textSize="14sp"/>
+       
+        <TextView android:id="@+id/connection_state"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/disconnected"
+                  android:textSize="14sp"/>
+
+
+            
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="5dp"
+                  android:background="#e0e0e0"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  >
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/label_data"
+                  android:textSize="14sp"/>
+
+        
+        <TextView android:id="@+id/data_value"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/no_data"
+                  android:textSize="14sp"/>
+            <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:text="hex收" />
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+      <EditText 
+	android:id="@+id/rx_data_id_1"
+    android:layout_width="fill_parent"
+    android:layout_height="120dp"
+    android:enabled="true"
+    android:gravity="top"
+    android:inputType="textMultiLine"
+    android:minLines="5"
+    android:maxLines="10"
+    android:scrollbars="vertical" 
+    android:background="@android:drawable/edit_text"
+    android:focusable="false"
+    android:textSize="12dp"
+        /> 
+     
+    </LinearLayout>
+    
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#e0e0e0"
+        >
+     
+        <TextView android:id="@+id/tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TXD"
+            android:textSize="12sp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            
+            android:text="hex发" />
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+         <EditText
+            android:id="@+id/tx_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:textSize="12sp"
+            >
+        </EditText> 
+    </LinearLayout>
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp">
+           <Button android:id="@+id/tx_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textSize="10sp"
+            android:layout_marginLeft="50dp"
+            />
+           <Button android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除"
+            android:textSize="10sp"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#e0e0e0"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+           <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以下为功能配置（IO、PWM）等"
+            android:textSize="12sp"
+            />
+            
+            </LinearLayout>
+    
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/toggleButton1"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/toggleButton2"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/toggleButton3"
+                android:text="ToggleButton" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/toggleButton1"
+                android:layout_below="@+id/toggleButton1"
+                android:layout_marginRight="19dp"
+                android:text="IO1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView1"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_alignRight="@+id/toggleButton2"
+                android:layout_marginRight="18dp"
+                android:text="IO2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/toggleButton3"
+                android:layout_below="@+id/toggleButton3"
+                android:layout_marginRight="21dp"
+                android:text="IO3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/toggleButton4"
+                android:layout_below="@+id/toggleButton4"
+                android:layout_marginRight="21dp"
+                android:text="IO4" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:text="PWM开关" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/switch1"
+                android:layout_alignBottom="@+id/switch1"
+                android:layout_alignRight="@+id/toggleButton4"
+                android:text="频率默认：250hz" />
+
+        </RelativeLayout>
+
+        
+        <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂空比0%" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

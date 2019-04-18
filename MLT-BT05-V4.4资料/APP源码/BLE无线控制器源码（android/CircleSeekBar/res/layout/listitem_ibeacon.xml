@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/iconditu"
+    android:orientation="vertical" 
+    
+    >
+
+    <!-- 这个是自定义布局，也就是ListView的显示样式 -->
+	<LinearLayout android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="1dp"
+	    android:layout_marginTop="30dp"
+	    >
+        <TextView
+        android:id="@+id/NAME_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:" />
+        <TextView
+        android:id="@+id/ibeacon_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAC:" />
+
+        <TextView
+            android:id="@+id/iBeacon_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00:00:00:00" />
+        
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:id="@+id/type0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TYPE:" />
+
+        <TextView
+            android:id="@+id/type1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UUID：" />
+
+        <TextView
+            android:id="@+id/ibeacon_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/MAYJOR0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Major:" />
+
+        <TextView
+            android:id="@+id/ibeacon_major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10000" />
+        
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/MINOR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mimor:" />
+
+        <TextView
+            android:id="@+id/ibeacon_minor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="888" />
+        
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/RSSI0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RSSI:" />
+
+        <TextView
+            android:id="@+id/ibeacon_rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-19" />
+        
+    </LinearLayout>
+    
+</LinearLayout>

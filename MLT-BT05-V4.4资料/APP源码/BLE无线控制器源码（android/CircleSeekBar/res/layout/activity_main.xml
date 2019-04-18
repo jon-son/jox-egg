@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_seekbar="http://schemas.android.com/apk/res/com.lee.circleseekbar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_view_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp" 
+        android:src="@drawable/rgb_3" />
+
+    <com.lee.circleseekbar.view.CircleSeekBar
+        android:id="@+id/circle_seekbar"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:thumb="@drawable/thumb"
+        circle_seekbar:progress_background="@android:color/transparent"
+        circle_seekbar:progress_max="1000"
+        circle_seekbar:progress_text_size="30dp"
+        circle_seekbar:progress_text_stroke_width="4dp"
+        circle_seekbar:progress_width="2dp"
+        circle_seekbar:show_progress_text="true" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/circle_seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/switch_1"
+        android:text="Button" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_seekbar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/circle_seekbar"
+                android:layout_marginLeft="30dp"
+                android:text="亮度："
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                 />
+
+            
+            <com.lee.circleseekbar.view.SeekBarView_R
+                android:id="@+id/seekBarView_R"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/textView1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView1" /> 
+        </LinearLayout>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/circle_seekbar"
+                android:layout_marginLeft="30dp"
+                android:text="亮度："
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                 />
+            <com.lee.circleseekbar.view.SeekBarView_G
+                android:id="@+id/seekBarView_G"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView2" /> 
+         </LinearLayout>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/circle_seekbar"
+                android:layout_marginLeft="30dp"
+                android:text="亮度："
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                 />
+            <com.lee.circleseekbar.view.SeekBarView_B
+                android:id="@+id/seekBarView_B"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView3" /> 
+         </LinearLayout>
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/circle_seekbar"
+                android:layout_marginLeft="30dp"
+                android:text="亮度："
+                android:textSize="20dp"
+                android:layout_marginTop="2dp"
+                 />
+            <com.lee.circleseekbar.view.SeekBarView
+                android:id="@+id/seekBarView_W"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/textView4" /> 
+         </LinearLayout>
+       
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:text="TextView" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle_seekbar="http://schemas.android.com/apk/res/com.lee.circleseekbar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    
+     >
+
+    <EditText
+        android:id="@+id/id_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_toRightOf="@+id/id_TextView1"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/id_TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="钥匙：" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/id_TextView1"
+        android:layout_below="@+id/id_TextView1"
+        android:layout_marginTop="21dp"
+        android:text="钥匙名：" />
+
+    <EditText
+        android:id="@+id/id_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/id_password"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+  
+    
+    
+    
+    
+    
+    
+    <com.lee.circleseekbar.view.CircleSeekBar2
+        android:id="@+id/circle_seekbar8"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:thumb="@drawable/thumb"
+        circle_seekbar:progress_background="@android:color/transparent"
+        circle_seekbar:progress_max="1000"
+        circle_seekbar:progress_text_size="30dp"
+        circle_seekbar:progress_text_stroke_width="4dp"
+        circle_seekbar:progress_width="2dp"
+        circle_seekbar:show_progress_text="true" />
+
+    <ImageButton
+        android:id="@+id/button8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        
+        android:background="@drawable/switch_1"
+        android:text="Button" />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="InlinedApi">
+        <ignore path="src/com/example/ble/BluetoothLeService.java" />
+    </issue>
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/lee/circleseekbar/select_color.java" />
+    </issue>
+</lint>

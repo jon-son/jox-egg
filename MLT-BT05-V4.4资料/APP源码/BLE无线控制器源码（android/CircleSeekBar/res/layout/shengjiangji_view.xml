@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/transparent_100"
+    >
+
+    <ImageButton
+        android:id="@+id/sjj_down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="33dp"
+        android:layout_toLeftOf="@+id/sjj_cent_button"
+        android:background="@color/transparent_100"
+        android:src="@drawable/sjj_down" 
+        android:layout_marginTop="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/sjj_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sjj_cent_button"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/sjj_cent_button"
+        android:background="@color/transparent_100"
+        android:src="@drawable/sjj_up" />
+
+    <ImageButton
+        android:id="@+id/sjj_cent_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sjj_down_button"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent_100"
+        android:src="@drawable/sjj_cent" />
+
+    <TextView
+        android:id="@+id/sjj_connect_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="14dp"
+        android:text="" />
+ 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/sjj_cent_button"
+        android:layout_below="@+id/sjj_connect_text_id"
+        android:layout_marginTop="37dp"
+        android:text="开关控制" />
+     
+</RelativeLayout>

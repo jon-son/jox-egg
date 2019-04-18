@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+<!--    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#B4CDE6"
+                  android:layout_margin="5dp"
+                  >
+    </LinearLayout> -->
+    
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        
+        <TextView android:id="@+id/set_pass_txt"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="APP连接密码："
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#39c9e3"
+            />
+        <EditText android:id="@+id/set_pass_value"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="123456"
+            android:textColor="#0000ff"
+            android:textSize="20sp"
+            android:layout_marginTop="1dp"
+            android:textCursorDrawable="@null"
+            android:background="@null"
+             android:digits="1234567890."
+             android:singleLine="true"
+             android:inputType ="number"
+            />
+        
+<!--          <
+    	   <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_write"
+            android:text="密码写入"
+            android:textSize="12sp"
+            /> -->
+         
+    </LinearLayout>
+    
+<LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#B4CDE6"
+                  android:layout_margin="10dp"
+                  >
+        </LinearLayout>
+        
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TextView android:id="@+id/app_version_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="当前版本：V2.2"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#39c9e3"
+            android:layout_marginTop="2dp"
+            />
+        
+        </LinearLayout>
+        
+		<LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="2dp"
+                  android:background="#B4CDE6"
+                  android:layout_margin="10dp"
+                  >
+        </LinearLayout>
+        
+        
+        
+        </LinearLayout>
